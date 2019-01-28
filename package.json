@@ -1,0 +1,25 @@
+{
+  "name": "thedish-back",
+  "version": "1.0.0",
+  "description": "the dish's backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charityvanb/TheDish-back.git"
+  },
+  "author": "CVB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charityvanb/TheDish-back/issues"
+  },
+  "homepage": "https://github.com/charityvanb/TheDish-back#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "node": "^11.8.0",
+    "nodemon": "^1.18.9"
+  }
+}
