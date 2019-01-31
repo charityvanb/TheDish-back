@@ -3,10 +3,15 @@ exports.seed = function(knex, Promise) {
       .then(function () {
         return knex('dish').insert([
           {
-            "imageurl": "",
-            "year": "1890",
-            "real": true
+            "url": "https://imgur.com/a/3mtnd35",
+            "real": true,
+            "uploader": CVB
           },
+          {"url": "https://imgur.com/a/3mtnd35",
+          "real": true,
+          "uploader": CVB
+
+          }
 
         ]);
       });
