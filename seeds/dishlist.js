@@ -3,15 +3,18 @@ exports.seed = function(knex, Promise) {
       .then(function () {
         return knex('dish').insert([
           {
-            "url": "https://imgur.com/a/3mtnd35",
+            "url": "https://s3.amazonaws.com/dishcvb/flowers.jpg",
             "real": true,
             "uploader": CVB
           },
-          {"url": "https://imgur.com/a/3mtnd35",
+          {"url": "hhttps://s3.amazonaws.com/dishcvb/goldandwhite.jpg",
           "real": true,
           "uploader": CVB
-
-          }
+          },
+          {"url": "https://s3.amazonaws.com/dishcvb/wildrose.jpg",
+          "real": true,
+          "uploader": CVB
+          },
 
         ]);
       });
