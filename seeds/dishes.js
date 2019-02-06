@@ -1,9 +1,9 @@
 
 exports.seed = function(knex, Promise) {
-  return knex('table_name').del()
+  return knex('dishes').del()
     .then(function () {
-      // Inserts seed entries
-      return knex('table_name').insert([
+
+      return knex('dishes').insert([
       {"url": "https://s3.amazonaws.com/dishcvb/flowers.jpg",
       "real": true,
       "uploader": "CVB"
