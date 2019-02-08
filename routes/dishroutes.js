@@ -11,9 +11,9 @@ router.get('/', (req, res, next) => {
 
 router.get('/:id', (req,res, next) => {
     console.log(req.params.id)
-    if (!Number.isFinite(req.params.id)) {
-        return res.status(404).send('no icon')
-    }
+    // if (!Number.isFinite(req.params.id)) {
+    //     return res.status(404).send('no icon')
+    // }
     queries.readDishById(req.params.id).then(dishes => res.status(200).send({ dishes }))
     .catch(next)
 })

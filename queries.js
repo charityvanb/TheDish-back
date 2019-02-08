@@ -10,7 +10,7 @@ module.exports = {
     deleteDishById(id) {
         return db('dishes').where('id', id).delete().returning('*')
     },
-    addDish(newMovie) {
+    addDish(newDish) {
         return db('dishes').insert(newDish).returning('*')
     },
     editDish(id, body) {
