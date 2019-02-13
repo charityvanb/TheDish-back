@@ -1,6 +1,6 @@
 
 exports.seed = function(knex, Promise) {
-  return knex('dishes').del()
+  return knex.raw("Delete From dishes; alter sequence dishes_id_seq restart with 1;")
     .then(function () {
 
       return knex('dishes').insert([
